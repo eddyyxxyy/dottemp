@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>EdsonPimenta.DotTemp</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Edson Pimenta, Willy Renzo</Authors>
+    <Product>DotTemp</Product>
+    <Description>Record structs for representing and performing arithmetic operations on temperature scales.</Description>
+    <PackageTags>Temperature, Conversion, Celsius, Fahrenheit, DotTemp, ToTemp</PackageTags>
+    <PackageIcon>icon.jpg</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/eddyyxxyy/dottemp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/eddyyxxyy/dottemp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\img\icon.jpg" Pack="true" PackagePath="\"/>
+    <None Include="..\..\img\logo.webp" Pack="true" PackagePath="\"/>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    <None Include="..\..\LICENSE.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <LangVersion>12.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <LangVersion>13.0</LangVersion>
+  </PropertyGroup>
+
+</Project>
